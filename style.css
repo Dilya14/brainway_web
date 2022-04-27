@@ -2,111 +2,31 @@ body {
     font-family: 'Rubik', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 header {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
 }
 
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
 }
 
-.nav_logo {
-    position: relative;
-    width: 400px;
-    height: 100px;
-}
-
-.part-1 {
-    position: absolute;
-    top: 10px;
-
-}
-
-.part-2 {
-    position: absolute;
-    top: 5px;
-    left: 15px;
-}
-
-.part-3 {
-    position: absolute;
-    top: 15px;
-    z-index: 2;
-}
-
-.part-4 {
-    position: absolute;
-    top: 20px;
-    left: 6px;
-}
-
-.part-5 {
-    position: absolute;
-    top: 30px;
-    left: 23px;
-    z-index: 1;
-}
-
-.part-6 {
-    position: absolute;
-    top: 42px;
-    left: 16px;
-}
-
-.part-7 {
-    position: absolute;
-    top: 40px;
-    left: 7px;
-    z-index: 1;
-}
-
-.part-8 {
-    position: absolute;
-    top: 42px;
-    left: 16px;
-}
-
-.part-9 {
-    position: absolute;
-    top: 22px;
-    left: 16px;
-}
-
-.part-10 {
-    position: absolute;
-    top: 25px;
-    left: 50px;
-}
-
-.part-11 {
-    position: absolute;
-    top: 55px;
-    left: 50px;
-}
-
-.part-12 {
-    position: absolute;
-    top: 16px;
-    left: 93px;
-}
-
-.nav_menu {
-    margin-top: 10px;
+.menu {
     display: flex;
 }
 
-li {
+header li {
     list-style: none;
     display: inline;
     margin-right: 30px;
-}
+} 
 
-a {
+header a {
     font-weight: 400;
     font-size: 17px;
     text-decoration: none;
@@ -117,50 +37,33 @@ a {
     font-weight: 500;
 }
 
-input {
+.button-1 {
     font-size: 17px;
     font-weight: 700;
     background-image: linear-gradient(to right, #6A11CB , #2575FC);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px 20px;
     border-radius: 15px;
     border: none;
     color: #fff;
 }
 
 .lang {
-    position: relative;
-    width: 60px;
-    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
 }
 
-.lang_icon {
-    position: absolute;
+.lang-icon {
+    padding: 0px 5px;
 }
 
-.lang_icon:first-child { 
-    top: 13px;
-    left: 10px;
+.lang-icon:first-child {
+    height: 30px;
 }
 
-.lang_icon:nth-child(2) {
-    top: 13px;
-    left: 16px;
-}
-
-.lang_icon:nth-child(3) {
-    top: 23px;
-    left: 10px;
-}
-
-.lang_icon:nth-child(4) {
-    left: 40px;
-    top: -5px;
-}
-
-.lang_icon:nth-child(5) {
-    top: 22px;
-    left: 70px;
+.lang-icon:last-child {
+    height: 10px;
 }
 
 .introduce {
@@ -185,17 +88,13 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-p {
+.intr p {
     font-size: 18px;
     line-height: 1.5;
 }
 
 .bold-text {
-    font-weight: bold;
-}
-
-section {
-
+    font-weight: 500;
 }
 
 .about-us {
@@ -210,17 +109,273 @@ section {
 .about-us_heading {
     font-size: 30px;
     text-align: center;
-    padding: 10px;
 }
 
 .about-us_img {
     width: 770px;
+    padding: 20px 0px;
 }
 
 .solutions {
-    background-color: #E5E5E5;
+    margin: 0 13%;    
+}
+
+.sol-title {
+    text-align: center;
+}
+
+.sol-block {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5% 0; 
+}
+
+.sol-block:nth-child(2) {
+    font-size: 12px;
+}
+
+.sol-block:nth-child(3) {
+    font-size: 14px;
+}
+
+.sol-block:nth-child(4) {
+    font-size: 14px;
+}
+
+.sol-img-1 {
+    width: 410px;
+}
+
+.sol-img-2 {
+    width: 470px;
+}
+
+.sol-img-3 {
+    width: 300px;
+}
+
+.sol-heading {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px #00000014;
+    padding: 0px 10px;
+}
+
+.bgc-1 {
+    background: linear-gradient(90deg, rgba(106, 17, 203, 0.1) 0%, rgba(37, 117, 252, 0.1) 100%);
+    padding: 20px 0px;
+    margin: 10% 0 0 0;
+}
+
+.goal {
+    margin: 0 18%; 
+}
+
+.goal h1{
+    text-align: center;
+}
+
+.get-free {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 20px;
+}
+
+.get-free img {
+    width: 70px;
+}
+
+.button-3 {
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #6A11CB , #2575FC);
+    box-shadow: 0px 5px 15px 0px #0046BB66;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+hr {
+    border-top: 1px solid;
+    border-bottom: none;
+    border-image: linear-gradient(to right, #6A11CB , #2575FC) 1;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.bgc {
+    background-color: #F8F8F8;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.logotype {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+
+.logotype img {
+    width: 100px;
+}
+
+.contact-us {
+    margin: 0 13%;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 370px;
+    padding: 15px;
+    margin: 7px 0px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 20px 0px #00000014;
+
+}
+
+textarea {
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    resize: none;
+    box-shadow: 0px 0px 20px 0px #00000014;
+    border-radius: 5px;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.text a {
+    text-decoration: underline;
+    font-size: 13px;
+} 
+
+.button-2 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 400px;
+    border-radius: 15px;
+    border: none;
+}
+
+.location {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.loc-1 {
+    width: 190px;
+    height: 180px;
+    background: linear-gradient(90deg, rgba(106, 17, 203, 0.2) 0%, rgba(37, 117, 252, 0.2) 100%);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.loc-2 {
+    width: 190px;
+    height: 180px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px 0px #00000014;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.fa-location-dot:first-child {
+    color: #fff;
+}
+
+.map {
+    width: 450px;
+    height: 240px;
+    margin: 13px 0px;
+}
+
+footer {
+    background-color: #000;
+    font-family: 'League Spartan', sans-serif;
+    color: #fff;
+}
+
+.footer {
+    margin: 0 13%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer li {
+    list-style: none;
+    padding: 8px 0px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;   
+}
+
+.text-blue {
+    background: linear-gradient(90deg, #4BA8FE 0.01%, #2575FC 47.4%, #0354DC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.fa-linkedin {
+    padding: 10px;
+}
+
+.footer-menu {
+    text-align: right;
+}
+
+.footer .logo {
+    width: 170px;
+}
+
+.small-text {
+    font-size: 10px;
+}
+
+.span a {
+    text-decoration: underline;
+    margin-left: 20px;
 }
